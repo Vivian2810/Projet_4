@@ -70,18 +70,18 @@ export default {
             <a href="/">My Todo list</a>
           </div>
           <div class="space-x-4">
-            <router-link
-              @click="logoutAction()"
+            <button
               class="text-white bg-red-500 rounded-md p-2 hover:font-bold"
-              >Disconect</router-link
+              @click="logoutAction()"
+              >Disconect</button
             >
           </div>
         </div>
       </nav>
-      <h2 class="text-center mt-12 text-2xl font-semibold text-gray-700">
+      <h2 class="text-center mt-12 text-2xl font-semibold">
         Welcome, {{ user?.name }}!
       </h2>
-      <SectionTodolist/>
+      <SectionTodolist />
     </div>
   </div>
 </template>
