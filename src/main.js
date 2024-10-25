@@ -6,7 +6,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import LoginPage from "./components/pages/LoginPage.vue";
 import RegisterPage from "./components/pages/RegisterPage.vue";
 import MyTodoList from "./components/pages/MyTodoList.vue";
-import Profil from "./components/pages/Profil.vue";
+import User from "./components/pages/User.vue";
 
 
 axios.defaults.baseURL = "https://mock-api.binaryboxtuts.com/"
@@ -23,7 +23,7 @@ const router = createRouter({
     { path: "/", component: LoginPage },
     { path: "/register", component: RegisterPage },
     { path: "/mytodolist", component: MyTodoList },
-    { path: "/profil", component: Profil }
+    { path: "/user", component: User }
   ],
 });
 

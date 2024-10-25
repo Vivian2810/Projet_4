@@ -1,11 +1,13 @@
 <script>
 import axios from "axios";
 import SectionTodolist from "../SectionTodolist.vue";
+import Navbar from "../Navbar.vue";
 
 export default {
   name: "MyTodoList",
   components: {
     SectionTodolist,
+    Navbar,
   },
   data() {
     return {
@@ -64,20 +66,7 @@ export default {
 <template>
   <div class="flex justify-center w-full">
     <div class="w-full">
-      <nav class="bg-slate-950 p-4 w-100 rounded-b-md">
-        <div class="container mx-auto flex justify-between items-center">
-          <div class="text-white text-lg font-semibold">
-            <a href="/">My Todo list</a>
-          </div>
-          <div class="space-x-4">
-            <button
-              class="text-white bg-red-500 rounded-md p-2 hover:font-bold"
-              @click="logoutAction()"
-              >Disconect</button
-            >
-          </div>
-        </div>
-      </nav>
+      <Navbar />
       <h2 class="text-center mt-12 text-2xl font-semibold">
         Welcome, {{ user?.name }}!
       </h2>
